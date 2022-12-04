@@ -203,3 +203,4 @@ if(markBMI > johnBMI) {
 } else {
     console.log(`John's BMI (${johnBMI}) is higher than Mark's BMI (${markBMI})!`);
 }
+
