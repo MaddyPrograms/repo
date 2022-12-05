@@ -221,5 +221,48 @@ console.log('23' / '2');
 
 let n = '1' + 1; // '11'
 n = n - 1;
-console.log(n);
+console.log(n); 
 
+//Truthy and Falsy Values
+// 5 Falsy Values: 0, '', undefined, null, NaN
+
+console.log(Boolean(0));
+console.log(Boolean(undefined));
+console.log(Boolean('Jonas'));
+console.log(Boolean({}));
+
+const money = 100;
+if(money) {
+    console.log("Don't spent it at all :)");
+} else {
+    console.log('You should get a job');
+}
+
+let _height = 0;
+if(_height) {
+    console.log("YAY! Height is defind");
+} else {
+    console.log('Height is undefind');
+}
+
+// Equality Operators _ == vs. ===  & if-selse-if statement
+
+const _age = '18';
+if(_age === 18) console.log('You jsut became an adult :D (Strict)');
+
+if(_age == 18) console.log('You just became an adult :D (loose)');
+
+const favourite = Number(prompt("What's your favourite number?"));
+console.log(favourite);
+console.log(typeof favourite);
+
+if (favourite === 23) { //22===23 -> FALSE
+    console.log('Cool! 23 is an amazing number!');
+} else if (favourite === 7) {
+    console.log('7 is also a cool number')
+} else if (favourite === 9) {
+    console.log('9 is also a cool number')
+} else {
+    console.log('Number is not 23 or 7 or 9');
+} 
+if (favourite !== 23) console.log('Why not 23?');
