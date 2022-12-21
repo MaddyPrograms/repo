@@ -378,3 +378,39 @@ if (day === 'Monday') {
 
 const me = 'Maddy';
 console.log(`I'm ${2022 - 2000} years old ${me}`)
+
+// The Conditional (Ternary) Operator
+
+const age_ = 23;
+age_ >= 18 ? console.log('I like to drink wine 🍷') : console.log('I like to drink water 💧');
+
+const _drink = age_ >= 18 ? 'wine 🍷' : 'water 💧';
+console.log(_drink);
+
+let drink2;
+if(age_ >= 18){
+    drink2 = 'wine 🍷';
+} else {
+    drink2 = 'water 💧';
+}
+console.log(drink2);
+
+console.log(`I like to drink ${age_ >= 18 ? 'wine 🍷' : 'water 💧'}`);
+
+/*
+Steven wants to build a very simple calculator for whenever he goes eating in a restaurant. In his country, it's usual to tip 15% if the bill value is between 50 and 300. If the value is different, the tip is 20%.
+
+1. Your task is to calculate the tip, depending on the bill value. Create a variable called 'tip' for this, It's not allowed to use an if/else statement, and then try to convert it to a ternary operator!).
+2. Print a string to the console containing the bill value, the tip, and the final value (bill + tip). 
+Example: 'The Bill was 275, the tip was 41.25, and the total value 316.25'
+
+TEST DATA: Test for bill values 275, 40 and 430
+
+HINT: To calculate 20% of a value simply multiple if by 20/100 = 0.2
+HINT: Value X is between 50 and 300, if it's >= 50 && <= 300.
+Good Luck :D
+*/
+
+const _bill = 430;
+const _tip = _bill <= 300 && bill >= 50 ? _bill * 0.15: _bill * 0.20;
+console.log(`The Bill was ${_bill}, the tip was ${_tip}, and the total value ${_bill + _tip}`);
