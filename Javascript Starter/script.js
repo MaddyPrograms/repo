@@ -411,6 +411,3 @@ HINT: Value X is between 50 and 300, if it's >= 50 && <= 300.
 Good Luck :D
 */
 
-const _bill = 430;
-const _tip = _bill <= 300 && bill >= 50 ? _bill * 0.15: _bill * 0.20;
-console.log(`The Bill was ${_bill}, the tip was ${_tip}, and the total value ${_bill + _tip}`);
