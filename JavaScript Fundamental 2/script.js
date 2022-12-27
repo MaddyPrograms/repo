@@ -158,7 +158,6 @@ console.log(_age1, _age2, _age3);
 
 const ages = [calcAges(_years[0]), calcAges(_years[1]), calcAges(_years.length - 1)];
 console.log(ages);
-<<<<<<< HEAD
 
 // Basic Array (Methods)
 
@@ -219,5 +218,6 @@ const _tip = [calcTips(bill[0]), calcTips(bill[1]), calcTips(bill[2])];
 const totals = [bill[0] + _tip[0], bill[1] + _tip[1], bill[2] + _tip[2]];
 
 console.log(bill, _tip, totals);
-=======
->>>>>>> 5c34835719de3b7d567189859613871986926546
+
+
+
