@@ -214,7 +214,7 @@ console.log(typeof NaN);
 
 console.log(String(23), 23);
 
-//Type Coerction 
+//Type coercion 
 console.log('I am ' + 23 + ' years old');
 console.log('23' - '10' -3);
 console.log('23' / '2');

@@ -33,7 +33,7 @@ console.log(appleOrangeJuice);
 const num = Number('23');
 console.log(num);
 
-// Functiona Declaration 
+// Function Declaration 
 function calcAge1(birthYear) {
     return 2023 - birthYear;
 }
@@ -158,63 +158,3 @@ console.log(_age1, _age2, _age3);
 
 const ages = [calcAges(_years[0]), calcAges(_years[1]), calcAges(_years.length - 1)];
 console.log(ages);
-
-// Basic Array (Methods)
-
-const _friends = ['Khizer', 'Haider', 'Ahsan'];
-
-// Add elements in last "push()"
-const newLength = _friends.push('Maddy');
-console.log(_friends);
-console.log(newLength);
-
-// Add element in the start "unshift()"
-_friends.unshift('Madad');
-console.log(_friends);
-
-// Remove element in the last "pop()"
-_friends.pop();
-const popped = _friends.pop();
-console.log(popped);
-console.log(_friends);
-
-// Remove element in the First "shift()"
-_friends.shift();
-console.log(_friends);
-
-// Know the index "indexOf()"
-console.log(_friends.indexOf('Khizer'));
-console.log(_friends.indexOf('Haider'));
-
-// Check if it includes
-_friends.push(23);
-console.log(_friends.includes('Khizer'));
-console.log(_friends.includes('Ahsan'));
-console.log(_friends.includes(23));
-
-if (_friends.includes('Haider')) {
-    console.log('You have a friend called Haider');
-}
-
-// Coding Challenge #2
-
-/*
-Steven is still building his tip calculator, using the same rules as before: Tip 15% of the bill if the bill value is between 50 and 300, and if the value is different, the tip is 20%.
-
-1. Write a function 'calcTip' that takes any bill value as an input and returns the corresponding tip, calculated based on the rules above (you can check out the code from first tip calculated challenge if you need to). Use the function type you like the most. Test the function using a bill value of 100.
-2. And now let's use arrays! So create an array 'bills' containing the test data below.
-3.Create an array 'tips' containing the tip value for each bill, calculated from the function you created before.
-4. BONUS: Create an array 'total' containing the total value, so the bill + tip.
-
-TEST DATA: 125, 555 and 44
-
-HINT: Remember that an array needs a value in each position, and that value can actually be the returned value of a function! So you can just call a function as array values (so don't store the tip value in separate variables forst, but rigt in the new array)
-
-*/
-
-const calcTips = bill => bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
-const bill = [125, 555, 44];
-const _tip = [calcTips(bill[0]), calcTips(bill[1]), calcTips(bill[2])];
-const totals = [bill[0] + _tip[0], bill[1] + _tip[1], bill[2] + _tip[2]];
-
-console.log(bill, _tip, totals);
